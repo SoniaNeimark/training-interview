@@ -1,0 +1,48 @@
+.app {
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+}
+
+.card {
+  width: 250px;
+  max-height: 116px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: antiquewhite;
+}
+
+.cards__list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+  align-items: center;
+  align-self: center;
+}
+
+.search {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: 569px) {
+  .cards__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-flow: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .cards__list::after {
+    content: "";
+    width: 550px;
+    /* flex: auto; */
+  }
+
+}
